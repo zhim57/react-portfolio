@@ -6,7 +6,7 @@ const cardinfos =[
         title: "Safe Trails",
         linkPro: "https://zhim57.github.io/safe-trails/",
         linkDep: "https://github.com/zhim57/safe-trails",
-        pic:"/react-portfolio/assets/images/Capture2i.JPG",
+        pic:"/react-portfolio/assets/images/Capture2i.jpg",
         linkProText: "link to project 1",
         description: "This is our first projects. We are group of four Rutgers Bootcamp Students. our Idea was to bring and easy to use app where prople can see the weather forecast for the next five days , for a given city. then to use the integrated API and find bike trails or hiking trails in a given radius of that city.",
 
@@ -35,7 +35,7 @@ const cardinfos =[
         title: "Eat Da Burger!",
         linkPro: "https://github.com/zhim57/Eat-Da-Burger",
         linkDep: "https://afternoon-wildwood-19991.herokuapp.com/",
-        pic:"/react-portfolio/assets/images/Fig1i.JPG",
+        pic:"/react-portfolio/assets/images/Fig1i.jpg",
         linkProText: "Link to the github repository",
         description: "This is a simple app which integrates simple MySQL database with express handlebars. I tried to solve the problem of enjoying a good burger which most often is conflicting with the healthy way of food combining, ayurvedic food and dosha types etc. At the end decided that it should be a personal choice and let the customers decide what to be the available ingredients and prices. Which luckily coincides with the American spirit of Freedom and independence. Since the 21st century bears the promise of intergalactic travel and possible alien visitors I decided to become a pioneer in the field and introduced the new non-human line of tasty burgers for these future visitors. Which should help my nutritional enterprise corner the market niche of feeding the aliens."
     },
@@ -55,7 +55,7 @@ const cardinfos =[
         title: "node.js team-viewer",
         linkPro: "https://github.com/zhim57/team-viewer",
         linkDep: "https://youtu.be/weHof_czSDo",
-        pic:"/react-portfolio/assets/images/TEAM-VIEWER1i.JPG",
+        pic:"/react-portfolio/assets/images/TEAM-VIEWER1i.jpg",
         linkProText: "Link to the github repository",
         description: "This is an aplication for work with three mysql data tables in order to provide easy access to different operations. Viewing employees , roles and departments ,editting them (ADD, Update,Delete), getting a department utilized budget etc. It is suitable for any organisation as a tool to comprehend and undertand the structure and see actual departments , roles and employees."
     }

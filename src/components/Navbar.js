@@ -1,8 +1,9 @@
 import React from 'react';
 import Avatar from'./Avatar';
-import Contacts from './Contacts';
+// import Contacts from './Contacts';
 import { Link } from 'react-router-dom';
-import '../pages/style.css'
+import './card.css'
+
 
 function Navbar () {
   
@@ -10,7 +11,7 @@ function Navbar () {
    return (
       <div className="fixed-top App " >
       <header className="light navbar-bottom">
-      <Avatar   img="assets/images/jivko4a.jpg" >
+      <Avatar   img="/react-portfolio/assets/images/jivko4a.jpg" >
       </Avatar>
         
        <h1>Hello there, I am Jivko</h1>

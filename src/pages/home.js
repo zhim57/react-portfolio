@@ -14,7 +14,7 @@ function Home() {
             <div className="container">
                 <div className="row">
                     {/* <!-- main paragraph with the ebeded immage --> */}
-                    <p className="niceText "><img width="160" src="assets/images/jivko4a.jpg" alt=" responsive image pic jivko  3"
+                    <p className="niceText "><img width="160" src="/react-portfolio/assets/images/jivko4a.jpg" alt=" responsive image pic jivko  3"
                             className="img-fluid box imgJ"/>
                         I love life and computers and would like to help people achieve a better and
                         fuller life with the help of 
@@ -36,7 +36,7 @@ function Home() {
                         and strong social bonds.
                         <a className="btn btn-primary" href="https://www.linkedin.com/in/jivko-atanassov-542b4112/" target="blank" role="button">linkedin</a>
                         <a className="btn btn-primary github" href="https://github.com/zhim57" target="blank" role="button">github</a>
-                        <a href="../../public/cv2020-jivko.pdf" className="btn btn-dark">RESUME</a>
+                        <a href="/react-portfolio/cv2020-jivko.pdf" className="btn btn-dark">RESUME</a>
                     </p>
                 </div>
             </div>

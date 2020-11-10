@@ -428,3 +428,6 @@ footer{
     font-size: calc(10px + 0.5vmin);
     color: rgb(53, 51, 51);
   }
+  .first-row{
+    margin-top: 200px;
+}

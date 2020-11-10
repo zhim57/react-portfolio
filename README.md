@@ -39,7 +39,7 @@ zhim57@yahoo.com
 ## Contributing
 all my colleagues and instructors at Rutgers Bootcamp.Thank you All
 ## License
-![GitHub](https://img.shields.io/github/license/zhim57/https://github.com/zhim57/react-portfolio)
+![GitHub](https://img.shields.io/github/license/zhim57/react-portfolio)
 
 ## Tests
 none
@@ -49,16 +49,16 @@ please email Jivko Atanassov with any questions at: zhim57@yahoo.com. Thank You.
 
 ## Links
 
-[link to this portfolio](https://zhim57.github.io/react-portfolio/)
+[link to this portfolio](https://github.com/zhim57/react-portfolio)
 
 [link to the deployed application](https://zhim57.github.io/react-portfolio/)
   
 
 ## Screenshots
 
-![screenshot no.1 of the working application](image1.JPG)
+![screenshot no.1 of the working application](./public/image1.JPG)
 
-![screenshot no.2 of the working application](image2.JPG)
+![screenshot no.2 of the working application](./public/image2.JPG)
 
 
   

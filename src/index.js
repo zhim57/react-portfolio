@@ -1,20 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-
 import reportWebVitals from './reportWebVitals';
-import { Dropdown, Button } from 'react-materialize';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-
 import Home from './pages/home';
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
-import Resume from "./components/resume";
-
 import {HashRouter as Router, Route} from 'react-router-dom';
 
  
@@ -38,9 +30,6 @@ ReactDOM.render(
         </Route>
         <Route exact={true} path="/contact">
           <Contact />
-        </Route>
-        <Route exact={true} path="/resume">
-          <Resume />
         </Route>
       </Router>
     

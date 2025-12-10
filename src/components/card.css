@@ -1,178 +1,162 @@
-/* .container{
-    background: blue;
-}  */
-.navbar1{
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 20px;
-    color:white;
-    display:inline-flex;
-    float:right;
-}
-.nav1{
-    
-    float: right;
-    font-size: 20px;
-    float:right;
-    color:rgb(205, 226, 14);
-    
-}
-.fullName{
-    
-    float: right;
-    font-weight: bold;
-    float:right;
-    color:white 
-    
+/* ===========================================
+   Base Styles
+   =========================================== */
+body {
+    background: #EEF2F7;
 }
 
+/* ===========================================
+   Layout Components
+   =========================================== */
+.first-row {
+    margin-top: 300px;
+}
 
-.contacts{
-    /* padding:25px;
-margin:25px; */
-color:gray;
-font-size: 20px;
-list-style-type: none;
-
-
-}
-.contacts-btn{
-    color:black;
-}
-.card-image-ja{
-    width:100%;;
-    height:70%; 
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(78, 78, 78);
-} 
-
-#h1{
-    float:left;
-    font-size: 46px;
-    color: black;
-    padding: 30px;
-}
-.box1{
-    float:right;
-    width: 50%;
-    padding: 30px;
-    margin: 10px;
-    margin-top: 130px;
-    border: gray 1px;
-    background: gray;
-}
-footer{
-    clear: both;
-    padding: 30px;
-    color:white;
-    background: #333;
-    text-align: center;
-}
 .box {
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12);
     min-height: 200px;
     width: 50vw;
     margin: 100px auto;
     background: white;
     border-radius: 5px;
 }
-.contactJ li{
-    color: #333;
-      font-size: medium;
-      
-    }
-    
-    body {
-        background: #EEF2F7;
-    }
-    .imgJ{
-      padding: 0;
-      max-width:30%;
-      margin:30px;
-      float: left;
-      
-      
 
-
-    }
-  .niceText{
-      text-align: justify;
-      max-height: 950px;
-      padding : 30px;
-      
-      
-     
-      font-size: calc( 10px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
-      
-    }
-   
-
-.card2{
-    margin: 20px !important;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12) !important;
-}
-.card2 .card-image :hover{
-    
-    opacity:50%;
-}
-.github{
-    background: black;
-    color:gray;
-}
-.pdf{
-    background:red;
-    color:white;
+/* ===========================================
+   Navigation
+   =========================================== */
+.navbar1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
+    display: inline-flex;
+    float: right;
 }
 
-.card-ja{
-  
-    margin: 100px;
-    width: 300px;
-    height:420px;
+.nav1 {
+    float: right;
+    font-size: 20px;
+    color: rgb(205, 226, 14);
+}
+
+.fullName {
+    float: right;
+    font-weight: bold;
+    color: white;
+}
+
+.links-nav {
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(230, 221, 221);
+    list-style-type: none;
+}
+
+.light {
+    background-color: #282c34;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(230, 221, 221);
+}
+
+/* ===========================================
+   Card Components
+   =========================================== */
+.card {
+    margin: 20px;
+    width: 400px;
+    height: 500px;
     color: teal;
 }
 
-/* Tooltip container */
+.card2 {
+    margin: 20px !important;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                0 100px 80px rgba(0, 0, 0, 0.12) !important;
+    background: radial-gradient(#fdf5df, #252525);
+    background-repeat: no-repeat;
+}
+
+.card2 .card-image:hover {
+    opacity: 50%;
+}
+
+.card-ja {
+    margin: 100px;
+    width: 300px;
+    height: 420px;
+    color: teal;
+}
+
+.card-image-ja {
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    border: 1px solid rgb(78, 78, 78);
+}
+
+.card-title,
+.link-ja {
+    padding-top: 5%;
+    padding-left: 5%;
+    min-height: 5vh;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+    font-size: calc(10px + 0.5vmin);
+    color: rgb(53, 51, 51);
+}
+
+/* ===========================================
+   Tooltip (Magic Text)
+   =========================================== */
 .magic-text {
     position: relative;
     display: flex;
     margin-left: 15px;
-    /* color: crimson; */
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
-  
-  /* Tooltip text */
-  .magic-text .magic-text-text {
+    border-bottom: 1px dotted black;
+}
+
+.magic-text .magic-text-text {
     visibility: hidden;
-  
-    background-color:rgb(200, 204, 204);
-    color:black;
+    background-color: rgb(200, 204, 204);
+    color: black;
     text-align: center;
     padding: 5px 0;
     font-size: 0.8rem;
-    height:200px;
+    height: 200px;
     width: 450px;
     border-radius: 6px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-   
-    /* Position the tooltip text - see examples below! */
+    border: 1px solid black;
     position: absolute;
     z-index: 30;
-  }
-  .magic-text:hover .magic-text-text {
-    visibility: visible;
-   
-  }
+}
 
-  .card2{
-    background: radial-gradient(#fdf5df, #252525);
-    background-repeat: no-repeat;
-  }
-  .circle-img {
+.magic-text:hover .magic-text-text {
+    visibility: visible;
+}
+
+/* ===========================================
+   Avatar & Images
+   =========================================== */
+.circle-img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -180,252 +164,105 @@ footer{
     border-width: medium;
     border-color: cornsilk;
     margin-right: 15%;
-    margin-left :5%;
-  }
-  .contacts {
-    margin-left: 15%;
-    margin-right: 5%;
-    color: white;
-    font-size: 1rem;
-    padding: 5px;
-  }
-/* body{
-    background: blue;
-} */
-.navbar1{
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 20px;
-    color:white;
-    display:inline-flex;
-    float:right;
-}
-.nav1{
-    
-    float: right;
-    font-size: 20px;
-    float:right;
-    color:rgb(205, 226, 14);
-    
-}
-.fullName{
-    
-    float: right;
-    font-weight: bold;
-    float:right;
-    color:white 
-    
-}
-/* .card-img-overlay{
-color:white;
-} */
-
-.card{
-    margin: 20px;
-    width: 400px;
-    height: 500px;
-    color: teal;
-    
-
-}
-/* .card-text{
-    color: teal;
-}
-.card-title{
-    text-align: center;
-font-size: 30px;
-font-weight: bold;
-    color:white; 
-    background: local; 
-    
-    
-}*/
-
-.contacts{
-/* padding:25px;
-margin:25px; */
-color:gray;
-font-size: 20px;
-list-style-type: none;
-
-
+    margin-left: 5%;
 }
 
-.links-nav
- {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: left;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(230, 221, 221);
-  list-style-type: none;
-  /* background: radial-gradient(#fdf5df, #252525);
-  background-repeat: no-repeat; */
+.imgJ {
+    padding: 0;
+    width: 160px;
+    margin: 10px;
+    float: left;
 }
-.contacts-btn{
-    color:black;
-}
-.card-image-ja{
-    width:100%;
 
-} 
-
-#h1{
-    float:left;
+/* ===========================================
+   About/Home Page
+   =========================================== */
+#h1 {
+    float: left;
     font-size: 46px;
     color: black;
     padding: 30px;
 }
-.box1{
-    float:right;
-    width: 50%;
+
+.niceText {
+    text-align: justify;
+    max-height: 950px;
     padding: 30px;
-    margin: 10px;
-    margin-top: 130px;
-    border: gray 1px;
-    background: gray;
-}
-footer{
-    clear: both;
-    padding: 30px;
-    color:white;
-    background: #333;
-    text-align: center;
-}
-.box {
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
-    min-height: 200px;
-    width: 50vw;
-    margin: 100px auto;
-    background: white;
-    border-radius: 5px;
-  }
-  .contactJ li{
-      color: #333;
-      font-size: medium;
-
-  }
-  
-  body {
-    background: #EEF2F7;
-  }
-  .imgJ{
-      padding: 0;
-      width:160px;
-      margin:10px;
-      float: left;
-      
-      
-
-
-  }
-  .niceText{
-      text-align: justify;
-      max-height: 950px;
-      padding : 30px;
-      
-      
-     
-        font-size: calc( 10px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
-      
-  }
-  .card{
-    margin: 20px;
-    width: 400px;
-    height: 500px;
-    color: teal;
-    
-
+    font-size: calc(10px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.card2{
-    margin: 20px !important;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12) !important;
-}
-.card2 .card-image :hover{
-    
-    opacity:50%;
-}
-.github{
-    background: black;
-    color:gray;
-}
-.pdf{
-    background:red;
-    color:white;
-}
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .light
-   {
-    background-color: #282c34;
-    min-height: 20vh;
-    display: flex;
-    flex-direction: left;
-    align-items: center;
-    font-size: calc(10px + 2vmin);
-    color: rgb(230, 221, 221);
-    /* background: radial-gradient(#fdf5df, #252525);
-    background-repeat: no-repeat; */
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  .circle-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: medium;
-    border-color: cornsilk;
-    margin-right: 15%;
-    margin-left :5%;
-  }
-  .contacts {
+/* ===========================================
+   Contact Page
+   =========================================== */
+.contacts {
     margin-left: 15%;
     margin-right: 5%;
     color: white;
     font-size: 1rem;
     padding: 5px;
-  }
-  .card-title,
-  .link-ja{
-    padding-top: 5%;
-    padding-left:5%;
-    /* background-color: lightgray; */
-    min-height: 5vh;
-    display: flex;
-    align-content: center;
-    flex-direction: left;
-    margin-top: 10px;
-    font-size: calc(10px + 0.5vmin);
-    color: rgb(53, 51, 51);
-  }
-  .first-row{
-    margin-top: 300px;
+    list-style-type: none;
+}
+
+.contactJ li {
+    color: #333;
+    font-size: medium;
+}
+
+.contacts-btn {
+    color: black;
+}
+
+/* ===========================================
+   Buttons
+   =========================================== */
+.github {
+    background: black;
+    color: gray;
+}
+
+.pdf {
+    background: red;
+    color: white;
+}
+
+/* ===========================================
+   Footer
+   =========================================== */
+footer {
+    clear: both;
+    padding: 30px;
+    color: white;
+    background: #333;
+    text-align: center;
+}
+
+/* ===========================================
+   App Defaults (CRA)
+   =========================================== */
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

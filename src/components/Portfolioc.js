@@ -2,7 +2,6 @@ import React from 'react';
 import cardinfos from'../cardinfos.js';
 import Card from './Card'
 import Navbar from './Navbar'
-// import { Button, Card, Row, Col } from 'react-materialize';
 import './portfolio.css'
 import '../pages/style.css'
 

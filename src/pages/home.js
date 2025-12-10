@@ -1,15 +1,10 @@
-import React, { Fragment } from 'react';
-import Navbar from '../components/Navbar';
+import React from 'react';
 import './style.css';
 
 function Home() {
     return (
-        <Fragment>
-            <Navbar/>
-
-
-    <section className="first-row">
-        <h1 id="h1">About Me</h1>
+        <section>
+            <h1 id="h1">About Me</h1>
         <div className="box">
             <div className="container">
                 <div className="row">
@@ -42,12 +37,8 @@ function Home() {
             </div>
         </div>
 
-    </section>
-
-
-        </Fragment>)
-
-
-    }
+        </section>
+    );
+}
 
 export default Home;

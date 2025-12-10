@@ -1,11 +1,8 @@
 import React from 'react';
 import cardinfos from'../cardinfos.js';
 import Card from './Card'
-import Navbar from './Navbar'
 import './portfolio.css'
 import '../pages/style.css'
-
-
 
 function PortfolioGrid() {
     function createCard(cardinfo) {
@@ -21,24 +18,15 @@ function PortfolioGrid() {
             />
         );
     }
- 
+
     return (
-        <div className="first-row">
-<Navbar />
         <div className="container col-md-12 col-lg-10 col-sm-8">
-        <h1>Portfolio</h1>
-        <div className="row">
-{/* <Portfolio
-test="white"/> */}
-{cardinfos.map(createCard) }
-</div>
-</div>
-</div>
+            <h1>Portfolio</h1>
+            <div className="row">
+                {cardinfos.map(createCard)}
+            </div>
+        </div>
+    );
+}
 
-        )
-
-    
-     }
-
- 
 export default PortfolioGrid;

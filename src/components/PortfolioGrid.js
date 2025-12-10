@@ -9,19 +9,18 @@ import '../pages/style.css'
 
 function PortfolioGrid() {
     function createCard(cardinfo) {
-        return <Card 
-        
-        key={cardinfo.key} 
-        name={cardinfo.title} 
-        img={cardinfo.linkPro}
-        img1={cardinfo.linkDep}
-        pic={cardinfo.pic}
-        text ={cardinfo.linkProText}
-        description ={cardinfo.description}
-        
-        />
-        
-        }
+        return (
+            <Card
+                key={cardinfo.key}
+                title={cardinfo.title}
+                projectUrl={cardinfo.linkPro}
+                githubUrl={cardinfo.linkDep}
+                imageUrl={cardinfo.pic}
+                linkText={cardinfo.linkProText}
+                description={cardinfo.description}
+            />
+        );
+    }
  
     return (
         <div className="first-row">

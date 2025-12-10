@@ -1,6 +1,5 @@
 import React from 'react';
 import Avatar from'./Avatar';
-// import Contacts from './Contacts';
 import { Link } from 'react-router-dom';
 import './card.css'
 

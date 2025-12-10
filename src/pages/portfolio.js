@@ -1,18 +1,9 @@
-import React, { Fragment } from 'react';
-
+import React from 'react';
 import PortfolioGrid from '../components/PortfolioGrid';
 import './style.css';
 
 function Portfolio() {
-    return (
-        <Fragment>
-
-<PortfolioGrid/>
-
-
-        </Fragment>)
-
-
-    }
+    return <PortfolioGrid />;
+}
 
 export default Portfolio;

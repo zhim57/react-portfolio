@@ -2,7 +2,6 @@ import React from 'react';
 import cardinfos from'../cardinfos.js';
 import Card from './Card'
 import './portfolio.css'
-import '../pages/style.css'
 
 function PortfolioGrid() {
     function createCard(cardinfo) {

@@ -7,7 +7,7 @@ import '../pages/style.css'
 
 
 
- function Portfolioc (props)   {
+function PortfolioGrid() {
     function createCard(cardinfo) {
         return <Card 
         
@@ -42,4 +42,4 @@ test="white"/> */}
      }
 
  
-export default Portfolioc;
+export default PortfolioGrid;

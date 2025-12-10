@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 
-import Portfolioc from '../components/Portfolioc';
+import PortfolioGrid from '../components/PortfolioGrid';
 import './style.css';
 
 function Portfolio() {
     return (
         <Fragment>
 
-<Portfolioc/>
+<PortfolioGrid/>
 
 
         </Fragment>)

@@ -352,31 +352,32 @@ button:focus-visible {
 .magic-text .magic-text-text {
     visibility: hidden;
     opacity: 0;
-    background: var(--secondary-color);
+    background: rgba(15, 23, 42, 0.95);
     color: var(--text-light);
     text-align: left;
     padding: 1rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
+    font-size: 0.85rem;
+    line-height: 1.6;
     height: auto;
-    max-height: 200px;
-    width: 300px;
-    max-width: 90vw;
+    max-height: none;
+    width: calc(100% + 2rem);
+    min-width: 280px;
     border-radius: var(--radius-md);
     border: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 100;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px);
+    z-index: 1000;
     box-shadow: var(--shadow-xl);
     transition: all var(--transition-fast);
-    transform: translateY(10px);
+    overflow-y: auto;
 }
 
 .magic-text:hover .magic-text-text {
     visibility: visible;
     opacity: 1;
-    transform: translateY(5px);
+    transform: translateX(-50%) translateY(0);
 }
 
 /* ===========================================
@@ -910,8 +911,11 @@ footer p {
     }
 
     .magic-text .magic-text-text {
-        width: 250px;
-        left: -100px;
+        width: 90vw;
+        min-width: unset;
+        max-width: 300px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-5px);
     }
 }
 

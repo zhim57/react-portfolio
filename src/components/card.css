@@ -366,18 +366,104 @@ a:hover {
 /* ===========================================
    About/Home Page
    =========================================== */
+.about-section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
 #h1 {
     float: none;
     font-size: clamp(2rem, 5vw, 3rem);
     color: var(--text-primary);
-    padding: 2rem;
+    padding: 2rem 2rem 1rem;
     text-align: center;
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin: 0;
 }
 
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.about-image {
+    flex-shrink: 0;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-normal);
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-text p:first-child {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.about-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.about-buttons .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    border: none;
+    text-decoration: none;
+}
+
+.about-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.about-buttons .btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.about-buttons .btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.about-buttons .btn-dark {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.about-buttons .btn-dark:hover {
+    background: var(--secondary-light);
+}
+
+/* Legacy support */
 .niceText {
     text-align: justify;
     max-height: none;
@@ -387,27 +473,21 @@ a:hover {
     line-height: 1.8;
 }
 
-.niceText .btn {
-    margin: 0.5rem 0.5rem 0.5rem 0;
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--radius-md);
-    font-weight: 500;
-    transition: all var(--transition-fast);
-    border: none;
-}
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.niceText .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-lg);
-}
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
 
-.niceText .btn-primary {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.niceText .btn-primary:hover {
-    background: var(--primary-dark);
+    .about-buttons {
+        justify-content: center;
+    }
 }
 
 /* ===========================================

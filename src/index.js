@@ -2,26 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/Footer';
+import Layout from './components/Layout';
 import Home from './pages/home';
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 import {HashRouter as Router, Route} from 'react-router-dom';
 
- 
-
-
-
-
 
 
 ReactDOM.render(
-
   <React.StrictMode>
- 
-
-      <Router>
+    <Router>
+      <Layout>
         <Route exact={true} path={["/", "/home"]}>
           <Home />
         </Route>
@@ -31,18 +23,9 @@ ReactDOM.render(
         <Route exact={true} path="/contact">
           <Contact />
         </Route>
-      </Router>
-    
-
-  
-
- 
-  <Footer /> 
-
-
+      </Layout>
+    </Router>
   </React.StrictMode>,
-  
-  
   document.getElementById('root')
 );
 

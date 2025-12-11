@@ -1,18 +1,8 @@
-import React, { Fragment } from 'react';
-
-import Portfolioc from '../components/Portfolioc';
-import './style.css';
+import React from 'react';
+import PortfolioGrid from '../components/PortfolioGrid';
 
 function Portfolio() {
-    return (
-        <Fragment>
-
-<Portfolioc/>
-
-
-        </Fragment>)
-
-
-    }
+    return <PortfolioGrid />;
+}
 
 export default Portfolio;

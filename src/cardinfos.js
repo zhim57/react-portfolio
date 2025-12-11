@@ -18,7 +18,7 @@ const cardinfos =[
         linkDep: "https://calm-ridge-53583.herokuapp.com/",
         pic:"/react-portfolio/assets/images/planner1i.jpg",
         linkProText: "Link to IFIA Exam",
-        description: "IFIA Exam platform - A comprehensive examination and certification system.",
+        description: "A full-stack examination platform built for the International Federation of Inventors' Associations. Features include user authentication, timed assessments, multiple question types, automated scoring, and certificate generation. Built with Node.js, Express, and MongoDB for robust data management and scalability.",
     },
     {
         key: 3,
@@ -27,7 +27,7 @@ const cardinfos =[
         linkDep: "https://synaptiq42.com",
         pic:"/react-portfolio/assets/images/weather_dashboardi.jpg",
         linkProText: "Link to Synaptiq42",
-        description: "Synaptiq42 - Technology solutions and digital innovation platform."
+        description: "A digital innovation and technology consulting platform offering cutting-edge solutions for businesses. The site showcases services in web development, data analytics, and digital transformation. Built with modern web technologies featuring responsive design and optimized performance."
     },
     {
         key: 4,
@@ -36,7 +36,7 @@ const cardinfos =[
         linkDep: "https://reminded-b105f03dfb98.herokuapp.com/",
         pic:"/react-portfolio/assets/images/Fig1i.jpg",
         linkProText: "Link to Reminded App",
-        description: "Reminded - A reminder and task management application to help you stay organized."
+        description: "A smart reminder and productivity application designed to help users stay organized and never miss important tasks. Features include customizable notifications, recurring reminders, priority levels, and a clean intuitive interface. Built as a full-stack application with real-time updates and user authentication."
     },
     {
         key: 5,
@@ -45,7 +45,7 @@ const cardinfos =[
         linkDep: "https://climat-bg.com/",
         pic:"/react-portfolio/assets/images/ss-shoutbox-screenshoti.jpg",
         linkProText: "Link to Climat-BG",
-        description: "Climat-BG - Climate and environmental information platform for Bulgaria."
+        description: "A comprehensive climate and environmental information portal for Bulgaria. Provides real-time weather data, climate trends, environmental statistics, and educational resources about sustainability. The platform aims to raise awareness about climate change and its impact on the region."
     },
     {
         key: 6,
@@ -54,7 +54,7 @@ const cardinfos =[
         linkDep: "https://synaptiq42.com/dq-tracker/index.html",
         pic:"/react-portfolio/assets/images/TEAM-VIEWER1i.jpg",
         linkProText: "Link to DQ Tracker",
-        description: "DQ Tracker - Data quality tracking and monitoring tool for analytics."
+        description: "A data quality monitoring and tracking tool designed for analytics teams. Enables users to define quality metrics, track data anomalies, generate reports, and ensure data integrity across pipelines. Features interactive dashboards and visualization tools for comprehensive data quality management."
     }
 
     

@@ -2,6 +2,9 @@ import React from "react";
 import "./card.css";
 
 function Card({ title, description, imageUrl, projectUrl, githubUrl, linkText }) {
+    // Only show code link if it's different from project URL
+    const showCodeLink = githubUrl && projectUrl !== githubUrl;
+
     return (
         <article className="card col-sm-10 col-md-6 col-lg-4 col-xl-3 card2 card-ja">
             <div className="card-image">
@@ -25,15 +28,17 @@ function Card({ title, description, imageUrl, projectUrl, githubUrl, linkText })
                     >
                         {linkText}
                     </a>
-                    <a
-                        className="link-ja github-link"
-                        href={githubUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={`View ${title} source code on GitHub`}
-                    >
-                        View Code
-                    </a>
+                    {showCodeLink && (
+                        <a
+                            className="link-ja github-link"
+                            href={githubUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`View ${title} source code on GitHub`}
+                        >
+                            View Code
+                        </a>
+                    )}
                 </div>
             </div>
         </article>

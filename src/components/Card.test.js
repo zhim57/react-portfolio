@@ -18,7 +18,7 @@ describe('Card Component', () => {
 
     test('renders project description in tooltip', () => {
         render(<Card {...mockProps} />);
-        expect(screen.getByText(/"A test project description"/)).toBeInTheDocument();
+        expect(screen.getByText('A test project description')).toBeInTheDocument();
     });
 
     test('renders project image with correct alt text', () => {
@@ -30,14 +30,20 @@ describe('Card Component', () => {
 
     test('renders project link with correct href', () => {
         render(<Card {...mockProps} />);
-        const projectLink = screen.getByText(/"View Live Demo"/);
-        expect(projectLink.closest('a')).toHaveAttribute('href', 'https://example.com/project');
+        const projectLink = screen.getByText('View Live Demo');
+        expect(projectLink).toHaveAttribute('href', 'https://example.com/project');
     });
 
     test('renders github link with correct href', () => {
         render(<Card {...mockProps} />);
-        const githubLink = screen.getByText('github repository link');
+        const githubLink = screen.getByText('View Code');
         expect(githubLink).toHaveAttribute('href', 'https://github.com/test/repo');
+    });
+
+    test('has proper accessibility labels', () => {
+        render(<Card {...mockProps} />);
+        expect(screen.getByLabelText('View Test Project live demo')).toBeInTheDocument();
+        expect(screen.getByLabelText('View Test Project source code on GitHub')).toBeInTheDocument();
     });
 
     test('links open in new tab', () => {

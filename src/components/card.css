@@ -254,8 +254,23 @@ a:hover {
 
 .link-ja:hover {
     background: var(--primary-dark);
-    transform: translateX(5px);
+    transform: translateY(-2px);
     color: white !important;
+}
+
+.card-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.github-link {
+    background: var(--secondary-color) !important;
+}
+
+.github-link:hover {
+    background: var(--secondary-light) !important;
 }
 
 /* ===========================================

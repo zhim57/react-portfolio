@@ -2,55 +2,98 @@ import React from 'react';
 
 function Contact() {
     return (
-        <section>
-            <div className="container box contactJ">
-                <div className="container">
-                    <div className="col-md-4">
-                        <section className="contacts">
-                            <h1>Contact</h1>
-                            <ul className="contacts">
-                                <li>330 Fisher Ave</li>
-                                <li>Piscataway, NJ, 08854</li>
-                                <li>tel:(908) 472 0799</li>
-                                <li>
-                                    <a href="mailto:zhim57@yahoo.com" className="contacts-btn">
-                                        email-me <i className="fa fa-envelope" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <br/>
-                    <aside>
-                        <div className="col-md-10">
-                            <form>
-                                <div className="form-group">
-                                    <label htmlFor="nameInput1">Your Name Here</label>
-                                    <input type="text" className="form-control" id="nameInput1" placeholder="John Doe Jr"/>
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="exampleFormControlInput1">Email address</label>
-                                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="exampleFormControlSelect1">Please select your topic</label>
-                                    <select multiple className="form-control" id="exampleFormControlSelect1">
-                                        <option>I have a general question</option>
-                                        <option>New project</option>
-                                        <option>An issue with an existing project</option>
-                                        <option>Billing inquiries</option>
-                                        <option>Feedback</option>
-                                    </select>
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="exampleFormControlTextarea1">Message</label>
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                                <input type="submit" value="Submit"/>
-                                <br/><br/>
-                            </form>
+        <section className="contact-section">
+            <h1 className="contact-title">Get In Touch</h1>
+            <div className="box contact-container">
+                <div className="contact-content">
+                    <div className="contact-info">
+                        <h2>Contact Information</h2>
+                        <p className="contact-intro">
+                            Feel free to reach out for projects, questions, or just to say hello!
+                        </p>
+                        <ul className="contact-list">
+                            <li>
+                                <span className="contact-icon">📍</span>
+                                <span>330 Fisher Ave, Piscataway, NJ 08854</span>
+                            </li>
+                            <li>
+                                <span className="contact-icon">📞</span>
+                                <a href="tel:+19084720799">(908) 472-0799</a>
+                            </li>
+                            <li>
+                                <span className="contact-icon">✉️</span>
+                                <a href="mailto:zhim57@yahoo.com">zhim57@yahoo.com</a>
+                            </li>
+                        </ul>
+                        <div className="contact-social">
+                            <a
+                                href="https://www.linkedin.com/in/jivko-atanassov-542b4112/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="social-link"
+                                aria-label="LinkedIn Profile"
+                            >
+                                LinkedIn
+                            </a>
+                            <a
+                                href="https://github.com/zhim57"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="social-link"
+                                aria-label="GitHub Profile"
+                            >
+                                GitHub
+                            </a>
                         </div>
-                    </aside>
+                    </div>
+                    <div className="contact-form-container">
+                        <h2>Send a Message</h2>
+                        <form className="contact-form">
+                            <div className="form-group">
+                                <label htmlFor="name">Your Name</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="name"
+                                    placeholder="John Doe"
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    className="form-control"
+                                    id="email"
+                                    placeholder="john@example.com"
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="subject">Subject</label>
+                                <select className="form-control" id="subject">
+                                    <option value="">Select a topic...</option>
+                                    <option value="general">General Question</option>
+                                    <option value="project">New Project</option>
+                                    <option value="issue">Existing Project Issue</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="message">Message</label>
+                                <textarea
+                                    className="form-control"
+                                    id="message"
+                                    rows="4"
+                                    placeholder="Your message here..."
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" className="submit-btn">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

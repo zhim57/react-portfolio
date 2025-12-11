@@ -19,12 +19,13 @@ function PortfolioGrid() {
     }
 
     return (
-        <div className="container col-md-12 col-lg-10 col-sm-8">
-            <h1>Portfolio</h1>
-            <div className="row">
+        <section className="portfolio-section">
+            <h1 className="portfolio-title">My Portfolio</h1>
+            <p className="portfolio-subtitle">Check out some of my recent projects</p>
+            <div className="portfolio-grid">
                 {cardinfos.map(createCard)}
             </div>
-        </div>
+        </section>
     );
 }
 

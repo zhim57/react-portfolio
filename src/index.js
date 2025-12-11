@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Layout from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/home';
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 import {HashRouter as Router, Route} from 'react-router-dom';
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <ScrollToTop />
       <Layout>
         <Route exact={true} path={["/", "/home"]}>
           <Home />

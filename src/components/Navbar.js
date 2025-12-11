@@ -1,6 +1,6 @@
 import React from 'react';
 import Avatar from'./Avatar';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './card.css'
 
 
@@ -16,13 +16,19 @@ function Navbar() {
                 <nav aria-label="Main navigation">
                     <ul className="links-nav">
                         <li className="nav-item">
-                            <Link className="nav-link links-nav" to="/">About</Link>
+                            <NavLink exact className="nav-link" activeClassName="nav-link-active" to="/">
+                                About
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link links-nav" to="/portfolio">Portfolio</Link>
+                            <NavLink className="nav-link" activeClassName="nav-link-active" to="/portfolio">
+                                Portfolio
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link links-nav" to="/contact">Contact</Link>
+                            <NavLink className="nav-link" activeClassName="nav-link-active" to="/contact">
+                                Contact
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>

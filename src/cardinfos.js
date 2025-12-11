@@ -5,10 +5,10 @@ const cardinfos =[
         key: 1,
         title: "Safe Trails",
         linkPro: "https://zhim57.github.io/safe-trails/",
-        linkDep: "https://github.com/zhim57/safe-trails",
+        linkDep: "https://zhim57.github.io/safe-trails/",
         pic:"/react-portfolio/assets/images/Capture2i.jpg",
-        linkProText: "link to project 1",
-        description: "This is our first projects. We are group of four Rutgers Bootcamp Students. our Idea was to bring and easy to use app where prople can see the weather forecast for the next five days , for a given city. then to use the integrated API and find bike trails or hiking trails in a given radius of that city.",
+        linkProText: "View Safe Trails",
+        description: "A collaborative project by four Rutgers Bootcamp students. The app displays a five-day weather forecast for any city and uses integrated APIs to find bike trails or hiking trails within a given radius of that location.",
 
     },
     {

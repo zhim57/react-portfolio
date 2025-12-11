@@ -167,6 +167,16 @@ a:hover {
     transform: translateY(-2px);
 }
 
+.links-nav .nav-link-active {
+    background: var(--accent-color);
+    color: white;
+}
+
+.links-nav .nav-link-active:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
 /* ===========================================
    Card Components
    =========================================== */

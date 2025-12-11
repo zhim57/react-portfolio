@@ -73,6 +73,40 @@ a:hover {
 }
 
 /* ===========================================
+   Focus States for Accessibility
+   =========================================== */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+.nav-link:focus {
+    outline-color: white;
+}
+
+.link-ja:focus,
+.btn:focus,
+.submit-btn:focus {
+    outline-color: white;
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.4);
+}
+
+/* ===========================================
    Layout Components
    =========================================== */
 .first-row {
